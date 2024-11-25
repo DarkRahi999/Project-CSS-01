@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 /*I_---------{  google font-family CDN  }---------- */
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400..700&family=Merienda:wght@300..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Salsa&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /*W_----------{  Author      :   Bisakto-Rahi  }----------_*/
 /*W_----------{  Create      :   25/11/2024    }-----------_*/
@@ -41,20 +42,26 @@
   --light-border-color: #dee2e6;
   --dark-border-color: #6c757d;
   /*-_----------{  My Font Variables  }----------_*/
-  --font-1: "Salsa", cursive;
-  --font-2: "Salsa", cursive;
+  --font-1: "Open Sans", sans-serif;
+  --font-2: "Lato", sans-serif;
 }
 /*R_----------{  Last Update   :   25/11/2024   }----------_*/
 
 /*O_----------{  My some Font Classes  }---------- */
 *{
-  font-family: var(--font-1);
-}        /*Y_----------{  Font weight : 0nly 400 are available  }---------- */
-p{
   font-family: var(--font-2);
-  font-weight: 500;
+  font-weight: 400;
+  font-style: italic;
+}        /*Y_----------{  Font weight : 100 - 900   }---------- */
+p{
   text-align: justify;
 }
+.sub-heading{
+  font-family: var(--font-1);
+  font-weight: 600;
+  font-style: bolder;
+}       /*Y_----------{  Font weight : 300 - 800    }---------- */
+/*//_----------{  My some Font Classes  }---------- */
 /*G_-------------{  default Style for Full-Website  }---------------_*/
 *{
   margin: 0;
