@@ -43,8 +43,8 @@
   --dark-border-color: #6c757d;
   /*-_----------{  Website theme Color Variables  }----------_*/
   --color-1: #fd6e0a;
-  /* --color-1: ; */
-  /* --color-1: ; */
+  --color-2: #fff8f3;
+  /* --color-3: ; */
   /*-_----------{  My Font Variables  }----------_*/
   --font-1: "Open Sans", sans-serif;
   --font-2: "Lato", sans-serif;
@@ -116,11 +116,17 @@ html{
 }
 /*//_--------------{  Default Style For all  }--------------_*/
 /*G_--------------{  Start Header Section Style  }--------------_*/
+
+header{
+  background-color: var(--color-2);
+}
+/*O_-------{  navbar Section Style  }-------  */
 .nav{
   display: flex;
   height: 60px;
   align-items: center;
-  background-color: #eeeeee;
+  background-color: var(--color-2);
+  margin: 0 10%;
 }
 /*- heading style  */
 .heading{
@@ -155,9 +161,28 @@ html{
   color: var(--black);
 }
 #btn-1{
-  border: 2px solid var(--black);
+  color: var(--white);
   padding-left: 12px;
   padding-right: 12px;
+}
+/*O_-------{  Banner Section Style  }-------  */
+.banner-items{
+  height: 100vh;
+  position: relative;
+}
+.banner-imgs .img-bg{
+  width: 55%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.banner-imgs .hardy{
+  height: 600px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
 }
 /*//_--------------{  Header Section Style  }--------------_*/
 /*G_-------------{  Start Banner Section Style  }---------------_*/
