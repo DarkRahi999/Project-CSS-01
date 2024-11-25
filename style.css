@@ -44,6 +44,7 @@
   /*-_----------{  Website theme Color Variables  }----------_*/
   --color-1: #fd6e0a;
   --color-2: #fff8f3;
+  --body: #f8f8f8;
   /* --color-3: ; */
   /*-_----------{  My Font Variables  }----------_*/
   --font-1: "Open Sans", sans-serif;
@@ -57,9 +58,9 @@
   font-weight: 400;
   /* font-style: italic; */
 }        /*Y_----------{  Font weight : 100 - 900   }---------- */
-p{
+/* p{
   text-align: justify;
-}
+} */
 .sub-heading{
   font-family: var(--font-1);
   font-weight: 600;
@@ -244,33 +245,29 @@ header{
 /*//_--------------{  Header Section Style  }--------------_*/
 /*G_--------------{  Start Extra Section Style  }---------------_*/
 section{
-  margin: 0 12%;
-  background-color: var(--white);
+  padding: 20px 12%;
+  background-color: var(--body);
 }
 /*O_-------{  About Section Style  }-------  */
 .about{
-  margin: 130px 0;
+  margin: 100px 0;
   background-color: var(--color-2);
 }
 .about-items{
-  padding: 100px 100px;
-}
-.about-text{
-  background-color: #fff;
-  padding: 15px;
+  padding: 80px 100px;
+  text-align: center;
 }
 .about-items h2{
-  text-align: center;
   font-weight: 600;
 }
 .about-items p{
-  padding: 30px 0;
+  padding: 30px 0 40px 0;
   font-weight: 300;
 }
 .about-details{
   display: flex;
   font-size: 20px;
-  background-color: var(--white);
+  background-color: var(--color-2);
   justify-content: center;  
   padding-bottom: 10px;
 }
@@ -297,11 +294,166 @@ section{
   font-weight: 500;
   font-style: bold;
 }
-/*O_-------{  What I do Section Style  }-------  */
+/*O_-------{  What  Section Style  }-------  */
+.what{
+  padding: 0 30px 30px 30px;
+  text-align: center;
+}
+.what-title{
+  font-size: 42px;
+  font-weight: 600;
+}
+.what-pera{
+  font-weight: 300;
+}
+/*O_-------{  Cart  Section Style  }-------  */
+.card-group{
+  display: flex;
+  margin-bottom: 50px;
+}
+.card-group .cart{
+  width: 25%;
+  background-color: var(--white);
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px;
+  box-shadow: 2px 5px 10px var(--gray-300);
+  transition: 0.4s;
+}
+.card-group .cart:hover{
+  box-shadow: 3px 8px 12px var(--gray-500);
+  transform: scale(1.04);
+}
+.card-group .cart-head img{
+  margin-bottom: 16px;
+}
+.card-group .cart-body h4{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.card-group .cart-body p{
+  text-align: justify;
+  color: var(--gray-600);
+  margin-bottom: 10px;
+}
+/*O_-------{  Resume  Section Style  }-------  */
+.Resume{
+  margin-bottom: 40px;
+}
+.Resume-title{
+  font-size: 45px;
+  font-weight: 600;
+  padding: 30px;
+  text-align: center;
+}
+.Resume .cart-group{
+  display: flex;
+}
+.Resume .cart{
+  width: 50%;
+  margin-left: 10p;
+  margin-right: 10px;
+  padding: 20px;
+}
+.Resume .cart-title{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.Resume .cart-body{
+  border-bottom: 2px solid var(--gray-600);
+  padding-bottom: 30px;
+}
+.last-cart .cart-body{
+  border: none;
+}
+.Resume .cart-body h3{
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.Resume .cart-body h4{
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: var(--gray-600);
+}
+.Resume .cart-body p{
+  font-weight: 350;
+}
+/*- Resume btn style  */
+.Resume .btn-group{
+  width: 260px;
+  margin: auto;
+}
+#btn-4{
+  background-color: var(--color-1);
+  border-radius: 4px;
+  color: var(--white);
+  font-size: 26px;
+  padding: 8px 20px;
+  transition: 0.3s;
+}
+#btn-4 i{
+  margin-right: 5px;
+}
+#btn-4:hover{
+  background-color: var(--orange);
+  color: var(--black);
+}
 /*//_--------------{  Extra Section Style  }-------------_*/
 /*G_--------------{  Start Footer Section Style  }---------------_*/
-
-
-
-
+/*O_-------{  Details Section Style  }-------  */
+footer{
+  background-color: var(--color-2);
+}
+.footer{
+  padding: 50px 12%;
+  display: flex;
+}
+.details{
+  width: 50%;
+  margin-top: 120px;
+}
+.details p{
+  margin-bottom: 10px;
+}
+.details img{
+  margin-left: 10px;
+}
+.contact-form{
+  width: 50%;
+  margin-left: 50px;
+}
+.footer h3{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+form{
+  margin-left: 10px;
+}
+.contact-form .my-input{
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+}
+.my-area{
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+}
+#btn-5{
+  background-color: var(--color-1);
+  border-radius: 4px;
+  color: var(--white);
+  font-size: 26px;
+  padding: 8px 20px;
+  border: none;
+  transition: 0.3s;
+}
+#btn-5:hover{
+  background-color: var(--orange);
+  color: var(--black);
+}
 /*//_--------------{  Footer Section Style  }--------------_*/
