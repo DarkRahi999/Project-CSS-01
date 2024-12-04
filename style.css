@@ -459,3 +459,7 @@ form{
   color: var(--black);
 }
 /*//_--------------{  Footer Section Style  }--------------_*/
+/*y_--------------{  Extra class  }--------------_*/
+.hide{
+  display: none;
+}

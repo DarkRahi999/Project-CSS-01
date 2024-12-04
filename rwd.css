@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*W_----------{  Author      :   Bisakto-Rahi  }----------_*/
+/*W_----------{  Create      :   18/10/2024    }-----------_*/
+
+/*G_--------------{  Start Default Style For all  }--------------_*/
+/*-_----------{  My Color Variables  }----------_*/
+:root {
+  --dark: #212529;
+  --gray: #6c757d;
+  --white: #ffffff;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --black: #000000;
+  /*-_----------{  Website Font Variables  }----------_*/
+  --font-1: "Open Sans", sans-serif;
+  --font-2: "Lato", sans-serif;
+}
+/*R_----------{  Last Update   :   04/12/2024   }----------_*/
+/*R_--------------------------------------{  Start Default Style For all  }--------------------------------------_*/
+/*Y_------------{  Extra small devices (phones, 576px and down) }------------*/
+@media screen and (max-width: 576px ) {
+  /*O_-------{  What  Section Style  }-------  */
+  .what{
+    padding: 0 10px 10px 30px;
+    text-align: justify;
+  }
+  /*O_-------{  Cart  Section Style  }-------  */
+  .card-group{
+    display: block;
+  }
+  .card-group .cart{
+    width: 100%;
+    margin: 20px 5px;
+  }
+} 
+/*Y_------------{  Medium devices (landscape tablets, 768px and up) }------------*/
+@media screen and (min-width: 576px ) and (max-width: 992px ) {
+  /*O_-------{  Cart  Section Style  }-------  */
+  .card-group{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+  .card-group .cart{
+    width: 100%;
+    margin: 20px 5px;
+  }
+} 
+/*//_--------------{  Default Style For all  }--------------//*/
